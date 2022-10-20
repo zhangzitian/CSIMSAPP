@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fromNoAndArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库号：1-1-2-2"
+                android:textSize="14sp"
+                android:textColor="#fe6700" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/btnOperation"
+                android:background="@drawable/btn_bg_white"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="领取"
+                android:textColor="@color/title_back_color"/>
+            <Button
+                android:id="@+id/btnOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/btn_bg_red"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="上架完成"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnQuxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/btnOperation"
+                android:background="@drawable/btn_bg_white"
+                android:minHeight="0dp"
+                android:text="取消"
+                android:padding="5dp"
+                android:textColor="@color/title_back_color"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

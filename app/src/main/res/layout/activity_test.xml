@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <include
+        android:id="@+id/task_count"
+        layout="@layout/task_count" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFEB3B"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户账号："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户角色："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="分组名（配货员领取任务）："
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/loginOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出账户" />
+            <Button
+                android:id="@+id/UpdatePassWordActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="修改密码" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFEB3B"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="入库业务(WareHousing)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/WarehousingInDistributionQualityInputActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---质检录入" />
+
+                <Button
+                    android:id="@+id/WarehousingInDistributionCheckInputActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---核对录入"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/WarehousingInDistributionFullTaskActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---入库任务领取" />
+
+                <Button
+                    android:id="@+id/WarehousingInDistributionManualActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---手动上架"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/WarehousingInForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---入库上架任务" />
+
+                <Button
+                    android:id="@+id/WarehousingInManagerTaskListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---详细任务列表" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#4CAF50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="补货业务(Replenish)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ReplenishAutoDistributionListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---自动补货列表" />
+
+                <Button
+                    android:id="@+id/ReplenishManualDistributionAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---手动补货" />
+
+                <Button
+                    android:id="@+id/ReplenishForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---补货任务列表" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#9C27B0"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="爆仓区上架(OutofSpace)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/OutofSpaceForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---任务列表" />
+
+                <Button
+                    android:id="@+id/OutofSpaceManagerListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---任务列表" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#F44336"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="质量问题下架(BatchOff )"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---新增任务" />
+
+                <Button
+                    android:id="@+id/BatchOffForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---批量质量问题下架" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---批量质量问题下架列表" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerManualAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---批量手动上架" />
+
+                <Button
+                    android:id="@+id/BatchOffForkliftManualListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---批量手动上架任务" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerManualListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---批量手动上架任务列表" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerTransferOrderListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---调拨单列表" />
+
+                <Button
+                    android:id="@+id/BatchOffManagerTransferOrderAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---调拨单" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#673AB7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="经理---改版调库下架(Bookrevision)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/BookrevisionManagerAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---新增任务" />
+
+                <Button
+                    android:id="@+id/BookrevisionForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---任务列表" />
+
+                <Button
+                    android:id="@+id/BookrevisionManagerListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---任务列表" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#9C27B0"
+                android:orientation="vertical">
+
+
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="日常纠错盘点(DailyError)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="销售助理"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="经理"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/DailyErrorManagerErrorListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="经理---盘点纠错列表" />
+
+                <Button
+                    android:id="@+id/DailyErrorManagerTaskListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---日常盘点任务列表" />
+
+                <Button
+                    android:id="@+id/DailyErrorManagerTaskDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="经理---任务详情" />
+
+                <Button
+                    android:id="@+id/DailyErrorManagerWarehousingExamineActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="经理---盘点入库单审核" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="叉车司机"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/DailyErrorForkliftWarehousingListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---盘点入库单列表" />
+
+                <Button
+                    android:id="@+id/DailyErrorForkliftWarehousingAddActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---盘点入库单" />
+
+                <Button
+                    android:id="@+id/DailyErrorForkliftWarehousingTaskListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="叉车司机---盘点入库任务列表" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#E91E63"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="手动业务(Manual)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="叉车司机"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/ManualForkliftListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---手动上下架列表" />
+
+                <Button
+                    android:id="@+id/ManualForkliftUpActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---手动上架" />
+
+                <Button
+                    android:id="@+id/ManualForkliftDowActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---手动下架" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="销售助理"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/ManualShelvesListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="销售助理---出入库调整单销售助理列表" />
+                <Button
+                    android:id="@+id/ManualShelvesWarehouseInActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="销售助理---入库调整单" />
+
+                <Button
+                    android:id="@+id/ManualShelvesWarehouseOutActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="销售助理---出库调整单" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="经理"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/ManualManagerListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---出入库调整单经理审核列表" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#F44336"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="库位调整业务(WarehousingAdjustment)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/WarehousingAdjustmentForkliftYearOutofSpaceActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="叉车司机---库位调区上架任务" />
+
+
+                <Button
+                    android:id="@+id/WarehousingAdjustmentDistributionAssortmentActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员---调品种任务列表" />
+
+                <Button
+                    android:id="@+id/WarehousingAdjustmentManagerActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="储运部经理---库位调整" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FF5722"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="库位纠错业务(WarehousingError)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="储运部经理"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/WarehousingErrorManagerListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---纠错列表" />
+
+                <Button
+                    android:id="@+id/WarehousingErrorManagerExamineActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="经理---纠错审核" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="配货员和叉车司机"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/WarehousingErrorForkliftDistributionListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="配货员和叉车司机---纠错调列表" />
+
+                <Button
+                    android:id="@+id/WarehousingErrorForkliftDistributionActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="配货员和叉车司机---纠错调整单" />
+
+                <Button
+                    android:id="@+id/WarehousingErrorForkliftDistributionAdd2Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="配货员和叉车司机---纠错调整单" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FF9800"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="盘点业务(Inventory)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/InventoryActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="盘点业务" />
+
+                <Button
+                    android:id="@+id/InventoryManualActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手工盘点" />
+
+                <Button
+                    android:id="@+id/InventoryEmptyActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="空位盘点" />
+
+                <Button
+                    android:id="@+id/InventoryNuclearDiskListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据核盘" />
+
+                <Button
+                    android:id="@+id/InventoryContrastListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数据对比" />
+
+                <!--<Button
+                    android:id="@+id/InventoryInputWholeActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="录入盘点整包整件数据" />
+
+                <Button
+                    android:id="@+id/InventoryInputDisperseActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="录入盘点散书数据" />-->
+
+                <!--<Button
+                    android:id="@+id/InventoryErrorActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="盘点纠错" />-->
+                <Button
+                    android:id="@+id/InventoryTaskCreateActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="生成库位纠错调整任务" />
+                <Button
+                    android:id="@+id/InventoryErrorListActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="库位纠错调整任务" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFC107"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="基础设置(BaseInfo)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#4CAF50"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BasicSettingsCodeDiskRulesActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---码盘规则" />
+
+                <Button
+                    android:id="@+id/BasicSettingsBooksOutOfPrintActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经理---图书绝版" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

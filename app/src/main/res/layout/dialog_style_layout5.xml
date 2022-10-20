@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/custom_dialog_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_custom_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="请选择层数："
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+            <CheckBox
+                android:id="@+id/cb_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBox_color"
+                android:textSize="15dp"
+                android:text="第四层" />
+            <CheckBox
+                android:id="@+id/cb_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBox_color"
+                android:textSize="15dp"
+                android:text="第三层"/>
+
+            <CheckBox
+                android:id="@+id/cb_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBox_color"
+                android:textSize="15dp"
+                android:text="第二层"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_one"
+                android:theme="@style/CheckBox_color"
+                android:textSize="15dp"
+                android:text="第一层"/>
+
+            </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_positive_custom_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="确定"
+                android:textSize="18sp"
+                android:textColor="@color/title_back_color" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#dfdfdf" />
+            <Button
+                android:id="@+id/btn_negative_custom_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="取消"
+                android:textSize="18sp"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

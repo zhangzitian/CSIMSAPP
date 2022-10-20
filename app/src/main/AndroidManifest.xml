@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zitian.csims">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--wx pay所需权限-->
+    <uses-permission   android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 振动器权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".application.CSIMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        android:hardwareAccelerated = "false"
+        android:largeHeap = "true"
+
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.activity.TestActivity"
+          
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.LoginActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.king.zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme"/>
+
+        <activity android:name=".ui.activity.MainActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--//入库业务  Warehousing-->
+
+        <activity android:name=".ui.activity.WarehousingInManagerTaskListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingInForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingInDistributionQualityInputActivity" 
+        android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.WarehousingInDistributionCheckInputActivity" 
+        android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.WarehousingInDistributionFullTaskActivity" 
+        android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.WarehousingInDistributionManualActivity" 
+        android:screenOrientation="portrait"/>
+
+
+        <!--//补货业务  Replenish-->
+
+        <activity android:name=".ui.activity.ReplenishAutoDistributionListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.ReplenishManualDistributionAddActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.ReplenishForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--//////////////////////////////////////////////////////////////////////////
+        //爆仓区上架  OutofSpace-->
+
+        <activity android:name=".ui.activity.OutofSpaceForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.OutofSpaceForkliftErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.OutofSpaceManagerListActivity" 
+            android:screenOrientation="portrait"/>
+
+
+
+        <!--//////////////////////////////////////////////////////////////////////////
+       //质量问题下架  BatchOff-->
+
+        <activity android:name=".ui.activity.BatchOffForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffForkliftManualListActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.BatchOffManagerListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffManagerAddActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffManagerManualListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffManagerManualAddActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffManagerTransferOrderListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BatchOffManagerTransferOrderAddActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <!--//////////////////////////////////////////////////////////////////////////
+       //改版调库下架-->
+        <activity android:name=".ui.activity.BookrevisionForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.BookrevisionManagerListActivity" 
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BookrevisionManagerAddActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--//////////////////////////////////////////////////////////////////////////
+       //日常纠错盘点   DailyError-->
+
+        <activity android:name=".ui.activity.DailyErrorManagerTaskListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.DailyErrorManagerTaskDetailsActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".ui.activity.DailyErrorForkliftWarehousingListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.DailyErrorForkliftWarehousingAddActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.DailyErrorForkliftWarehousingTaskListActivity" 
+            android:screenOrientation="portrait"/>
+
+
+        <!--//////////////////////////////////////////////////////////////////////////
+       //手动业务      Manual-->
+
+        <activity android:name=".ui.activity.ManualForkliftListActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ManualForkliftUpActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ManualForkliftDowActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.ManualShelvesWarehouseInActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ManualShelvesWarehouseOutActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.ManualShelvesListActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ManualShelvesEditActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.ManualManagerListActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ManualManagerExamineActivity" 
+            android:screenOrientation="portrait"/>
+        <!--//////////////////////////////////////////////////////////////////////////
+       //库位调整业务  WarehousingAdjustment-->
+
+        <activity android:name=".ui.activity.WarehousingAdjustmentForkliftYearOutofSpaceActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingAdjustmentDistributionAssortmentActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingAdjustmentManagerActivity" 
+            android:screenOrientation="portrait"/>
+        <!--//////////////////////////////////////////////////////////////////////////
+       //库位纠错业务 WarehousingError-->
+        <activity android:name=".ui.activity.WarehousingErrorForkliftDistributionAddActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorForkliftDistributionAdd2Activity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorForkliftDistributionUpdateActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorForkliftDistributionListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorForkliftDistributionActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorManagerExamineActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WarehousingErrorManagerListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--//////////////////////////////////////////////////////////////////////////
+       //盘点业务   Inventory-->
+        <activity android:name=".ui.activity.InventoryManualListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryActivity" 
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastEmptyActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.InventoryContrastEmptyErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastInputDisperseActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.InventoryContrastInputDisperseErrorActivity" 
+        android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastInputWholeActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastInputWholeErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryContrastManualAddItemListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryInputWholeActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryInputWholeErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryInputDisperseActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryInputDisperseErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryNuclearDiskListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--<activity android:name=".ui.activity.InventoryNuclearDiskListErrorActivity" 
+            android:screenOrientation="portrait"/>-->
+
+        <!--<activity android:name=".ui.activity.InventoryErrorActivity" 
+            android:screenOrientation="portrait"/>-->
+
+        <activity android:name=".ui.activity.InventoryErrorListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryEmptyActivity" 
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".ui.activity.InventoryEmptyErrorActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.UpdatePassWordActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryManualAddItemListActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryTaskCreateActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.InventoryTaskCreateEmptyActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.InventoryTaskCreateManualScatteredActivity" 
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.InventoryTaskCreateManualWholeActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryTaskCreateManualWholeAndScatteredActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.InventoryTaskCreateNuclearDiskActivity" 
+            android:screenOrientation="portrait"/>
+
+        <!--//////////////////////////////////////////////////////////////////////////
+        //盘点业务   Inventory-->
+
+        <activity android:name=".ui.activity.BasicSettingsCodeDiskRulesActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BasicSettingsBooksOutOfPrintActivity" 
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.SetServerIPActivity" 
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".common.PushSmsService"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.zitian.csims.common.PushSmsService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

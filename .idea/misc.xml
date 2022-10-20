@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/drawable/bg_main_hui.xml" value="0.195" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/drawable/bg_my_style7.xml" value="0.195" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/drawable/btn_unfocus_bg.xml" value="0.195" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/drawable/check_color.xml" value="0.195" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/drawable/custom_dialog_background.xml" value="0.195" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_batch_off_forklift_manual_list.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_batch_off_manager_manual_list_item.xml" value="0.3171875" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_inventory_contrast_empty.xml" value="0.33" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_inventory_empty.xml" value="0.5375905797101449" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_inventory_empty_error.xml" value="0.17" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_inventory_task_create.xml" value="0.4270833333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_inventory_task_create_manual_whole.xml" value="0.4270833333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_login.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_main.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_manual_forklift_up.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_test.xml" value="0.240625" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_adjustment_distribution_assortment.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_adjustment_forklift_year_outof_space.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_adjustment_manager.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution_add.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution_add2.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution_list.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution_list_iem.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_forklift_distribution_update.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_manager_examine.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_manager_list.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_error_manager_list_item.xml" value="0.42864583333333334" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_distribution_check_input.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_distribution_full_task.xml" value="0.67" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_distribution_manual.xml" value="0.5" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_distribution_quality_input.xml" value="0.33" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_forklift_list.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_forklift_list_item.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_manager_task_list.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/activity_warehousing_in_manager_task_list_item.xml" value="0.2734375" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/dialog_style_layout.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/dialog_style_layout2.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/dialog_style_layout3.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/dialog_style_layout4.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/dialog_style_layout5.xml" value="0.67" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/main_item_layout.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/progress_dialog.xml" value="0.5536458333333333" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_contrast_empty.xml" value="0.358695652173913" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_empty.xml" value="0.2672239108409321" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_task_create.xml" value="0.5494791666666666" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_task_create_manual_whole.xml" value="0.5494791666666666" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/dialog_style_layout5.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

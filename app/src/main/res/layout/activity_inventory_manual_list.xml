@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#03A9F4"
+            android:textSize="32dip"
+
+            android:textStyle="bold"></Spinner>
+
+        <Spinner
+            android:id="@+id/sp2"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></Spinner>
+
+
+        <Spinner
+            android:id="@+id/sp3"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></Spinner>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#20a1ff" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv3"
+            android:text="注意："
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv3"
+            android:text="整件整包完成盘点不需要点击结束，"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/all_have_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/list"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_btn"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="开始"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="18sp"></Button>
+
+            <Button
+                android:id="@+id/bt04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_btn"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="结束"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="18sp"></Button>
+
+            <Button
+                android:id="@+id/bt03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_btn"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:enabled="false"
+                android:text="减项"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="18sp"></Button>
+            <Button
+                android:id="@+id/bt02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_btn"
+                android:minHeight="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:enabled="false"
+                android:text="增项"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="18sp"></Button>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

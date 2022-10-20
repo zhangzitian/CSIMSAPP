@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_line_red" />
+
+                    <TextView
+                        android:id="@+id/tvProdNo"
+                        android:layout_toRightOf="@+id/rl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:text="产品编码："></TextView>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actvProdNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:hint=""
+                        android:text=""
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/search_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="8dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/search_icon" />
+                    <ImageView
+                        android:id="@+id/search_image2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/scan" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#f2f2f2"></View>
+
+                <LinearLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <View
+                        android:id="@+id/rll2"
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bg_line_red" />
+
+                    <TextView
+                        android:id="@+id/tvProName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="产品名称："
+                        android:textColor="#333333"
+                        android:textSize="16sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvProName2"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#f2f2f2"></View>
+
+            </LinearLayout>
+
+            <com.github.jdsjlzx.recyclerview.LRecyclerView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbarSize="5dp"
+
+                android:scrollbars="vertical"
+                android:descendantFocusability="blocksDescendants"
+                />
+
+            <Button
+                android:id="@+id/bt01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_bg_red"
+                android:minHeight="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="确认"
+                android:textColor="#ffffff"
+                android:textSize="18sp"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

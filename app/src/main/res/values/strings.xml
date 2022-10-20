@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">库位管理</string>
+    <string name="current_version">当前版本 V</string>
+    <string name="version_unknown">版本未知</string>
+
+    <string name="wait_dialog_title">加载中，请稍后...</string>
+
+    <string name="error_please_check_network">网络无法连接，请检查网络！</string>
+    <string name="error_timeout">请求超时</string>
+    <string name="error_not_found_server">无法连接服务器</string>
+    <string name="error_url_error">URL错误！</string>
+    <string name="error_not_found_cache">找不到缓存</string>
+    <string name="error_system_unsupport_method">不支持该请求！</string>
+    <string name="error_parse_data_error">数据转换错误</string>
+    <string name="error_unknow">未知错误</string>
+    <string name="permission_camera">App扫码需要用到拍摄权限</string>
+
+</resources>

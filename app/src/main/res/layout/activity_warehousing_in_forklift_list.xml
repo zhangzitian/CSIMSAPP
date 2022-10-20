@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_line_red" />
+
+                <TextView
+                    android:id="@+id/tvProdNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/rl2"
+                    android:text="产品编码："
+                    android:textColor="#333333"
+                    android:textSize="16sp"></TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvProdNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:text=""
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/search_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@mipmap/search_icon" />
+
+                <ImageView
+                    android:id="@+id/search_image2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@mipmap/scan" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#f2f2f2"></View>
+
+            <LinearLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <View
+                    android:id="@+id/rll2"
+                    android:layout_width="3dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bg_line_red" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="产品名称："
+                    android:textColor="#333333"
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvProName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#f2f2f2"></View>
+
+        </LinearLayout>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="blocksDescendants"
+
+            android:scrollbarSize="5dp"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/all_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/no_data" />
+
+                <TextView
+                    android:id="@+id/tipMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:text="暂无任务！"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
