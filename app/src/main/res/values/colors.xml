@@ -20,4 +20,6 @@
     <color name="dark">#5e5656</color>
     <color name="yellow">#FFFF00</color>
 
+    <color name="error_background">#B2DFFE</color>
+
 </resources>

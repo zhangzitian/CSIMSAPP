@@ -47,9 +47,24 @@
         <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/main_item_layout.xml" value="0.5536458333333333" />
         <entry key="..\:/Project/CSIMS/app/app/src/main/res/layout/progress_dialog.xml" value="0.5536458333333333" />
         <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_contrast_empty.xml" value="0.358695652173913" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_contrast_input_whole.xml" value="0.4822916666666667" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_contrast_list.xml" value="0.4822916666666667" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_contrast_manual_add_item_list.xml" value="0.4822916666666667" />
         <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_empty.xml" value="0.2672239108409321" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_empty_error.xml" value="0.4822916666666667" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_error_list.xml" value="0.33016304347826086" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_input_disperse_error.xml" value="0.4822916666666667" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_input_whole_error.xml" value="0.5" />
         <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_task_create.xml" value="0.5494791666666666" />
         <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_inventory_task_create_manual_whole.xml" value="0.5494791666666666" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_distribution_check_input.xml" value="0.33016304347826086" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_distribution_full_task.xml" value="0.5" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_distribution_manual.xml" value="0.33016304347826086" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_distribution_quality_input.xml" value="0.1933876811594203" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_forklift_list.xml" value="0.33016304347826086" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_forklift_list_item.xml" value="0.1933876811594203" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_manager_task_list.xml" value="0.1933876811594203" />
+        <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/activity_warehousing_in_manager_task_list_item.xml" value="0.1933876811594203" />
         <entry key="..\:/Project/CSIMS/code/app/app/src/main/res/layout/dialog_style_layout5.xml" value="0.358695652173913" />
       </map>
     </option>
