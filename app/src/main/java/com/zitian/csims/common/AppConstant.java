@@ -70,6 +70,10 @@ public class AppConstant {
     {
         return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/wareHousingHandler.ashx?action=RestoreTaskJL";
     }
+    public static final String DeliveryNoteList()// = "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/wareHousingHandler.ashx?action=RestoreTaskJL";
+    {
+        return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/QCfeedbackHandler.ashx?action=WarehouseDatalist";
+    }
     //叉车司机角色
     //入库上架任务 activity_warehousing_in_forklift_list WarehousingInForkliftListActivity
     public static final String WarehousingInForkliftList()// = "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/Table_tasksHandler.ashx?action=Table_tasksByUser";
@@ -130,6 +134,11 @@ public class AppConstant {
     public static final String WarehousingInDistributionManual()// = "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/wareHousingHandler.ashx?action=Manualloading"; //手动
     {
         return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/wareHousingHandler.ashx?action=Manualloading";
+    }
+    //质检员添加质检反馈单
+    public  static  final  String QcfeedbackAdd()
+    {
+        return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/QCfeedbackHandler.ashx?action=Add";
     }
 
     //////////////////////////////////////////////////////////////////////////

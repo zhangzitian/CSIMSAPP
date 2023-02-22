@@ -78,7 +78,12 @@
         android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.WarehousingInDistributionManualActivity" 
         android:screenOrientation="portrait"/>
-
+        <!--//质检反馈单-->
+        <activity android:name=".ui.activity.QcfeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <!--//送货通知单-->
+        <activity android:name=".ui.activity.DeliveryNoteActivity"
+            android:screenOrientation="portrait"/>
 
         <!--//补货业务  Replenish-->
 
