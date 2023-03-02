@@ -189,6 +189,7 @@ public class QcfeedbackActivity extends BaseActivity implements  View.OnClickLis
                 if (qCfeedbackAdd.getResult() == 1) {
                     ToastUtil.show(this, qCfeedbackAdd.getMsg());
                     subButton.setEnabled(true);
+                    finish();
                 }else
                 {
                     ToastUtil.show(this, qCfeedbackAdd.getMsg());
