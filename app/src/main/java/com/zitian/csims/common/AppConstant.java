@@ -140,6 +140,16 @@ public class AppConstant {
     {
         return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/QCfeedbackHandler.ashx?action=Add";
     }
+    //质检员质检反馈单列表
+    public  static  final  String QcfeedbackList()
+    {
+        return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/QCfeedbackHandler.ashx?action=list";
+    }
+    //质检员质检反馈单详情
+    public  static  final  String QcfeedbackDetail()
+    {
+        return "http://"+ CSIMSApplication.getAppContext().getServerIp()+"/" + "ajax/QCfeedbackHandler.ashx?action=single";
+    }
 
     //////////////////////////////////////////////////////////////////////////
     //补货业务  Replenish

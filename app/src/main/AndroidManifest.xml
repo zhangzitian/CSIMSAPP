@@ -80,7 +80,13 @@
         android:screenOrientation="portrait"/>
         <!--//质检反馈单-->
         <activity android:name=".ui.activity.QcfeedbackActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <!--//质检反馈单列表-->
+        <activity android:name=".ui.activity.QcfeedbackListActivity"
+            android:screenOrientation="portrait" />
+        <!--//质检反馈单详情-->
+        <activity android:name=".ui.activity.QcfeedbackDetailActivity"
+            android:screenOrientation="portrait" />
         <!--//送货通知单-->
         <activity android:name=".ui.activity.DeliveryNoteActivity"
             android:screenOrientation="portrait"/>
